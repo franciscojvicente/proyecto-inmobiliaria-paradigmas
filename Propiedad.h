@@ -6,5 +6,5 @@ class Propiedad : public Inmueble{
     int Banios;
     int cocheras;
     int Suits;
-    TipoPropiedad Tipo;
+    TipoPropiedad *Tipo;
 };

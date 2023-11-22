@@ -1,8 +1,8 @@
-
+#include <iostream>
+#include <string>
+using namespace std;
 class TipoPropiedad{
-    string Tipo;
     protected:
-    TipoPropiedad ObtenerTipo(){
-
-    }
+    virtual string ObtenerTipo()=0;
+    virtual void ListarInformacion()=0;
 };
