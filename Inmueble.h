@@ -19,6 +19,7 @@ class Inmueble {
     Estados estado;
     float PrecioBase;
     duenio DuenioInmueble;
+    int CantidadInteresados;
     
 
 };
