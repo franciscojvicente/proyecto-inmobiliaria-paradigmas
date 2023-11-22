@@ -18,6 +18,7 @@ class Inmueble {
     string Direccion; 
     Estados estado;
     float PrecioBase;
+    duenio DuenioInmueble;
     
 
 };
