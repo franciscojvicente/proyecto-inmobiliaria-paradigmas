@@ -9,7 +9,7 @@ protected:
 	int codigo;
 	string mail;
 	string telefono;
-	string direccion;
+	string direccion;	
 	string nombre;
 public:
 	Duenio();
