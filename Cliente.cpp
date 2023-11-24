@@ -8,20 +8,42 @@ Cliente::Cliente(int Dni, string Nombre, string Mail, string Telefono): dni(Dni)
 
 }
 
-void Cliente::EliminarPropiedadInteres(Propiedad* propiedad) {
-    // Iterar sobre el vector para encontrar la propiedad y eliminarla
-    for (auto i = PropiedadesInteres.begin(); i != PropiedadesInteres.end(); ++i) {
-        if (PropiedadesInteres[i] == *propiedad) {
-            delete *i;
-            // Se encontró la propiedad, eliminarla del vector
-            PropiedadesInteres.erase(i);
-            break;  // Salir del bucle después de eliminar la propiedad
-        }
-    }
+void Cliente::EliminarInmuebleInteres(Inmueble* inmueble) {
+    // auto it = std::find(inmueblesInteres.begin(), inmueblesInteres.end(), inmueble);
+
+    // if (it != inmueblesInteres.end()) {
+    //     delete *it;
+    //     inmueblesInteres.erase(it);
+    // }
+
+
+
+    // for (Inmueble* i:inmueblesInteres)
+    // {
+    //     if (i == inmueble)
+    //     {
+    //         delete(i);
+
+    //     }
+        
+    // }
+    
 }
 
-void Cliente::AgregarPropiedadInteres(Propiedad* propiedad) {
-    PropiedadesInteres.push_back(propiedad);
+void Cliente::AgregarInmuebleInteres(Inmueble* inmueble) {
+    // inmueblesInteres.push_back(inmueble);
+
+
+    // auto it = std::find(inmueblesInteres.begin(), inmueblesInteres.end(), inmueble);
+
+    // // Verificar si el inmueble está en la lista
+    // if (it != inmueblesInteres.end()) {
+    //     std::cout << "El inmueble ya está en la lista." << std::endl;
+    // } else {
+    //     // El inmueble no está en la lista, así que agrégalo
+    //     inmueblesInteres.push_back(inmueble);
+    //     std::cout << "El inmueble ha sido agregado a la lista." << std::endl;
+    // }
 }
 
 string Cliente::GetMail() {

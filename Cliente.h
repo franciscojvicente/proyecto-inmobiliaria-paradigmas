@@ -6,7 +6,6 @@
 #include <vector>
 using namespace std;
 
-class Propiedad;
 class Cliente
 {
 private:
@@ -14,14 +13,14 @@ private:
     string nombre;
     string mail;
     string telefono;
-    vector<Propiedad*> PropiedadesInteres;
+    vector<Inmueble*> inmueblesInteres;
 
 public:
     Cliente();
     Cliente(int Dni, string Nombre, string Mail, string Telefono);
     string GetMail();
-    void AgregarPropiedadInteres(Propiedad* propiedad);
-    void EliminarPropiedadInteres(Propiedad* propiedad);
+    void AgregarInmuebleInteres(Inmueble* Inmueble);
+    void EliminarInmuebleInteres(Inmueble* Inmueble);
     ~Cliente();
 };
 
