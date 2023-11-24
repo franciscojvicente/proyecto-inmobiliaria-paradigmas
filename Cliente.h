@@ -1,7 +1,7 @@
 #ifndef CLIENTE_H_
 #define CLIENTE_H_
 #define MAX 100
-#include "Propiedad.h"
+#include "Inmueble.h"
 #include <iostream>
 #include <vector>
 using namespace std;
